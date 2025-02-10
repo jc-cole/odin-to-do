@@ -1,10 +1,11 @@
 export class ProjectList {
     constructor(project) {
         this.project = project
-        this.createDomNode()
+        this.createElement()
     }
 
-    createDomNode() {
-
+    createElement() {
+        this.element = document.createElement("div")
+        this.element.textContent = "this is a ProjectList placeholder"
     }
 }

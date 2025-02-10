@@ -1,10 +1,10 @@
 export class ProjectBar {
     constructor(projectManager) {
         this.projectManager = projectManager
-        createDomNode()
+        this.createElement()
     }
 
-    createDomNode() {
+    createElement() {
         let projectBarDomNode = document.createElement("div")
         
         this.projectManager.projectList.forEach(project => {
@@ -13,6 +13,6 @@ export class ProjectBar {
             projectBarDomNode.appendChild(newDomNode)
         });
 
-        this.domNode = projectBarDomNode
+        this.element = projectBarDomNode
     }
 }

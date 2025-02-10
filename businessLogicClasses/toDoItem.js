@@ -1,10 +1,6 @@
 export class ToDoItem {
     constructor(title, description, dueDate, priority) {
-        if (!(dueDate instanceof Date)) {
-            throw new Error("Parameter 'dueDate' must be of type Date.")
-        }
-
-        this.id = Date.now() // kind of a scuffed way of making an id but ok for now
+        this.id = Date.now()
 
         this.title = title
         this.description = description

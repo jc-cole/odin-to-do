@@ -3,7 +3,7 @@ export class Project {
         this.id = Date.now()
 
         this.title = title
-        this.toDoList = toDoList
+        this.toDoList = toDoList || []
     }
 
     addItem(toDoItem) {
@@ -13,7 +13,7 @@ export class Project {
     removeItem(toDoItem) {
         this.toDoList.forEach((element, index) => {
             if (element.id === toDoItem.id) {
-                this.toDoList.splice(index, 1);
+                this.toDoList.splice(index, 1)
             }
         })
     }

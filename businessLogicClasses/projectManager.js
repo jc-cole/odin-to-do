@@ -1,6 +1,6 @@
 export class ProjectManager {
-    constructor(containerNode) {
-        this.projectList = []
+    constructor(containerNode, projectList) {
+        this.projectList = projectList || []
     }
 
     addProject(project) {
