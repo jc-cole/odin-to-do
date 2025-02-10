@@ -9,12 +9,6 @@ class ToDoCard {
         let card = document.createNode("div")
         card.textContent = "this is a to do item: " + this.toDoItem.title
     }
-
-    render() {
-
-    }
-
-
 }
 
 export { ToDoCard }

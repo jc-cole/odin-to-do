@@ -1,4 +1,3 @@
-import { ToDoCard } from "./toDoCard"
 
 class ProjectManager {
     constructor(containerNode) {
