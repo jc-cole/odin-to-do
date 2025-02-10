@@ -1,5 +1,7 @@
-class Project {
+export class Project {
     constructor(title, toDoList) {
+        this.id = Date.now()
+
         this.title = title
         this.toDoList = toDoList
     }
@@ -11,9 +13,8 @@ class Project {
     removeItem(toDoItem) {
         this.toDoList.forEach((element, index) => {
             if (element.id === toDoItem.id) {
-                //remove element at current index
                 this.toDoList.splice(index, 1);
             }
-        });
+        })
     }
 }

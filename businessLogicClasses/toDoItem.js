@@ -1,4 +1,4 @@
-class ToDoItem {
+export class ToDoItem {
     constructor(title, description, dueDate, priority) {
         if (!(dueDate instanceof Date)) {
             throw new Error("Parameter 'dueDate' must be of type Date.")
@@ -11,6 +11,4 @@ class ToDoItem {
         this.dueDate = dueDate
         this.priority = priority
     }
-
-    // setters and getters if I need them
 }

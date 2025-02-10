@@ -1,4 +1,4 @@
-class ProjectBar {
+export class ProjectBar {
     constructor(projectManager) {
         this.projectManager = projectManager
         createDomNode()
